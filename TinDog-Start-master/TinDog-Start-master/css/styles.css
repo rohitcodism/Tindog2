@@ -1,0 +1,177 @@
+/* individual-by-option */
+body {
+    font-family: 'Montserrat';
+}
+.container-fluid {
+    padding: 5% 15% 15%;
+}
+h1 {
+    font-family: 'Montserrat-Black';
+    font-weight: bolder;
+    size: 4.5rem;
+    line-height: 1.5;
+    color: white;
+    padding-bottom: 1.25rem;
+}
+h2 {
+    font-family: "Montserrat-Bold";
+}
+/* navigation bar */
+.navbar {
+    padding:0 0 10rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 18px;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+    padding-bottom: 5%;
+}
+/* title */
+#title {
+    background-color: #ff4c68;
+}
+.title-image {
+    transform: rotate(25deg);
+    position: absolute;
+    margin: 0 0 10% 30%;
+    left: 25%;
+}
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+/* features-section */
+#features {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.ftrprg {
+    color: gray;
+    font-size: larger;
+    text-align: center;
+}
+.tick-icon {
+    color: #ef8172;
+    padding-bottom: 1.25rem;
+}
+.tick-icon:hover {
+    color: red;
+}
+.bulls-icon {
+    color: #ef8172;
+    padding-bottom: 1.25rem;
+}
+.bulls-icon:hover {
+    color: red;
+}
+.heart-icon {
+    color: #ef8172;
+    padding-bottom: 1.25rem;
+}
+.heart-icon:hover {
+    color: red;
+}
+/* testimonial section */
+#testimonials {
+    background-color: #ff4c68;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.carousel-item {
+    padding: 7% 15%;
+}
+/* press */
+#press {
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+/* pricing-section */
+#pricing {
+    text-align: center;
+    padding: 100px;
+}
+.price-col {
+    padding: 3% 2%;
+}
+/* call-to-action */
+#cta {
+    background-color: #ff4c68;
+    padding: 7% 25%;
+    text-align: center;
+}
+.cta-h3 {
+    font-family: 'Poppins-Bold', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 5%;
+}
+.btn-cta {
+    margin: 5% 2%;
+}
+/* footer-section */
+#footer {
+    padding: 4% 0;
+    text-align: center;
+}
+.bottom-container {
+    padding: 5% 0;
+    text-align: center;
+}
+.email-logo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 680px;
+
+}
+.fblogo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 740px;
+
+}
+.instagram-logo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 800px;
+
+}
+
+/* media-queries */
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        transform: rotate(0deg);
+        position: static;
+    }
+}

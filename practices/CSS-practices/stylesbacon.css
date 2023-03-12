@@ -1,0 +1,20 @@
+body {
+    background-color: bisque;
+}
+h1 {
+    color: brown;
+    font-size: 125px;
+
+}
+img:hover {
+    background-color: red;
+}
+.bacon {
+    background-color: bisque;
+}
+.Pizza {
+    background-color: bisque;
+}
+#heading {
+    color: brown;
+}

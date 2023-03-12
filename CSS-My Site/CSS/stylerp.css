@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+h1 {
+    font-size: 5.625rem;
+    margin: 2.6rem auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    line-height: 2;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    color: #11999E;
+}
+.topcontainer {
+    background-color: #D1FFF3;
+    position: relative;
+    padding-top: 2.6rem;
+}
+.middle-container {
+    background-color: #FEFBE9;
+    padding-bottom: .25rem;
+}
+.bottom-container {
+    margin-bottom: 0;
+    background-color: #66BFBF;
+    position: relative;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.cldimgbottom {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+.cldimgtop {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+.pandaimage {
+    height: 100px;
+    width: 100px;
+}
+.picimg {
+    width: 25%;
+    float: left;
+    padding-right: 30px;
+}
+.webdevimg {
+    width: 25%;
+    float: right;
+    padding-left: 30px;
+}
+.emaillogo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 668px;
+}
+.linkedinlogo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 720px;
+}
+.instalogo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 770px;
+}
+.fblogo {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    left: 80px;
+}
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    width: 5%;
+    border-width: 5px;
+    border-color: gray;
+}
+.copyright {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;;
+}
