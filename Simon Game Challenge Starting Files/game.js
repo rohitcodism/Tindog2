@@ -4,7 +4,7 @@ buttonColours = ["red", "blue", "green", "yellow"];
 var randomChosenColour = buttonColours[randomNumber];
 gamePattern = [];
 var num = gamePattern.push(randomChosenColour)
-$(".btn").fadeOut(100).fadin
+$(".").fadeOut(100).fadin
 function makesound(num){
     if(num == "blue"){
         var blue = new Audio("sounds/blue.mp3")
