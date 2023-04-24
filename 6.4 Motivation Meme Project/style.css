@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+.poster{
+    background-color: black;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+.motivationalImage{
+    border: 10px solid white;
+}
