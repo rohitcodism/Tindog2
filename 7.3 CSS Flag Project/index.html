@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Dancing+Script&family=Libre+Franklin:wght@900&family=Montserrat:wght@400;900&family=Poppins:wght@700&family=Roboto+Mono:ital,wght@0,400;1,100&family=Roboto:wght@900&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+    /* Write your CSS Code here */
+    .flag{
+      position: relative;
+      height: 600px;
+      width: 900px;
+      background-color: red;
+      text-align: center;
+      font-size: 4rem;
+    }
+    .flag > div{
+      position: absolute;
+      top: 25%;
+      height: 300px;
+      width: 900px;
+      background-color: blue;
+    }
+    .flag > div > div{
+      position: relative;
+      left: 350px;
+      bottom: 25px;
+      height: 200px;
+      width: 200px;
+      background-color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 4rem;
+    }
+    p{
+      font-family: 'Castoro Titling', cursive;
+    }
+    .flag> p {
+      position: relative;
+      top: 40px;
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
