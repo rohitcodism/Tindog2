@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
+    <link rel="stylesheet" href="input.css">
 </head>
-<body>
-    <div class="main my-8">
-        <div class="left py-8">
+<body class="bg-gray-100">
+    <div class="main w-4/5 flex-col items-center justify-center text-center content-center">
+        <div class="left my-8 text-center mx-auto">
             <img src="./images/facebook.svg" alt="fb-png">
-            <p>Facebook helps you connect and share with the people in your life.</p>
+            <p class="text-lg">Facebook helps you connect and share with the people in your life.</p>
         </div>
-        <div class="right my-8">
-            <input type="text" placeholder="Email or phone number">
-            <input type="password" placeholder="Password">
-            <button>Log in</button>
-            <p>Forgot password ?</p>
+        <div class="right my-12 bg-white mx-auto align-middle p-8 rounded-xl">
+            <div class="input text-center">
+                <input class="block my-4 box-border px-4 h-8 py-4" type="text" placeholder="Email or phone number">
+            </div>
+            <div class="password">
+                <input class="block my-4 px-4 py-4 h-8" type="password" placeholder="Password">
+            </div>
+            <button class="my-4">Log in</button>
+            <p class="my-4">Forgot password ?</p>
             <hr>
-            <button>Create new account</button>
+            <button class="mt-4">Create new account</button>
         </div>
         <p>Create a page for a celebrity, brand or business.</p>
     </div>
