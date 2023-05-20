@@ -5,3 +5,4 @@ let e = prompt("Type your name please : ");
 console.log(e);
 let f = window;
 console.log(f);
+document.querySelector("h1").innerHTML = "Good Bye"
