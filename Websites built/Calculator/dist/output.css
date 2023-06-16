@@ -522,7 +522,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.w-1\/12 {
+  width: 8.333333%;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
