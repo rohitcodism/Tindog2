@@ -6,7 +6,7 @@ $(document).keypress(function(event) {
 
     });
 $("h1").on("mouseover", function() {
-       setTimeout(function(){
+    setTimeout(function(){
         $("h1").css("color", "skyblue");
     }, 1);
 });
