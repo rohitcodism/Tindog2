@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+p{
+  color: crimson;
+}
+h1{
+  box-shadow: inset;
+  color: cornflowerblue;
+  outline: #282c34;
+}
