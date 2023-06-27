@@ -8,7 +8,15 @@
 
 // escape sequence //
 
-let fruit = 'bana\nna';
-console.log(fruit);
-let phone = "app\"le";
-console.log(phone);
+// let fruit = 'bana\nna';
+// console.log(fruit);
+// let phone = "app\"le";
+// console.log(phone);
+
+// String Methods //
+
+let name = " Apple   ";
+console.log(name.toUpperCase());
+console.log(name.slice());
+console.log(name.replace("A p", "l l"));
+console.log(name.trim());
