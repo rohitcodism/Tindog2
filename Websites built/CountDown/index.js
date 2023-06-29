@@ -2,7 +2,7 @@
 const val = document.querySelectorAll(".inputTime input")
 let endDate = 0;
 document.querySelector(".start").addEventListener("click", function(){
-    endDate = val[0].value + " " + val[1].value + " " +  "2023 " + val[2].value + ":" + val[3].value  + " " + val[4].value
+    endDate = val[0].value + " " + val[1].value + " " +  val[2].value + val[3].value + ":" + val[4].value  + " " + val[5].value
 });
 console.log(endDate)
 let input = document.querySelectorAll(".col input")
