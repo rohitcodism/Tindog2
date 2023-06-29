@@ -12,9 +12,9 @@ function clock(){
     let diff = (end - now);
 // days conversion //
     input[0].value = Math.floor(((((diff/3600000)/24)/30)/12));
-    input[1].value = Math.floor((((diff/3600000)/24)%30))
+    input[1].value = Math.floor(((((diff/3600000)/24)/30)%12))
     input[3].value = Math.floor(((diff)/3600000)%24);
-    input[2].value = Math.floor((((((diff)/1000)/60)/60)/24));
+    input[2].value = Math.floor(((((((diff)/1000)/60)/60)/24)%30));
     input[4].value = Math.floor((((diff)/60000)%60));
     input[5].value = Math.floor(((diff/1000)%60));
 }
