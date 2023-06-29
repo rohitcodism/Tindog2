@@ -1,3 +1,3 @@
 var generateName = require('sillyname');
-var sillyname = generateName();
-console.log("My name is ${silllyname}.")
+var sillyName = generateName();
+console.log('My name is ' + sillyName)
