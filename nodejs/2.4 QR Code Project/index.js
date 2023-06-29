@@ -4,10 +4,30 @@
 3. Create a txt file to save the user input using the native fs node module.
 */
 import inquirer from "inquirer";
+import { type } from "os";
+import qr from "qr-image";
+import fs from "fs";
 inquirer
-.prompt([
-    "Enter the url to make a QR : "
-])
-.then((answers)=>{
-    
-})
+    .prompt([
+        {
+            message:"Enter the URL to make a QR : ",
+            name:"URL",
+        },
+    ])
+    .then((answers)=>{
+        const url = answers.URL;
+        var qr_svg = qr.image(url, {type: 'png'});
+        qr_svg.pipe(require('fs').createWriteStream('qr_img.png'));
+    })
+    .catch((error)=>{
+        if(error.isTtyError){
+
+        }else{
+
+        }
+    })
+
+
+
+
+var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
