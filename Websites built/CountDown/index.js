@@ -1,28 +1,28 @@
 // const endDate = "11 July 2023 10:00 PM"
 const val = document.querySelectorAll(".inputTime input")
+let endDate = 0;
 document.querySelector(".start").addEventListener("click", function(){
-const endDate = val[0].value + " " + val[1].value + " " +  "2023 " + val[2].value + ":" + val[3].value  + " " + val[4].value
+    endDate = val[0].value + " " + val[1].value + " " +  "2023 " + val[2].value + ":" + val[3].value  + " " + val[4].value
 });
 console.log(endDate)
-document.getElementById("endDate").innerText = endDate;
-const input = document.querySelectorAll("input")
+let input = document.querySelectorAll(".col input")
 function clock(){
-    const end = new Date(endDate);
-    const now = new Date();
-    const diff = (end - now);
-
-    // days conversion //
-    input[0].value = Math.floor((((((diff)/1000)/60)/60)/24));
+    let now = new Date();
+    let end = new Date(endDate);
+    let diff = (end - now);
+// days conversion //
     input[1].value = Math.floor(((diff)/3600000)%24)
+    input[0].value = Math.floor((((((diff)/1000)/60)/60)/24));
     input[2].value = Math.floor((((diff)/60000)%60))
     input[3].value = Math.floor(((diff/1000)%60))
 }
 // initial call
 clock();
-
-setInterval(
-    ()=>{
-        clock();
-    },
-    1000
-)
+document.querySelector(".start").addEventListener("click", ()=>{
+    setInterval(
+        ()=>{
+            clock();
+        },
+        1000
+    )
+})

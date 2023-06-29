@@ -50,6 +50,7 @@ button{
     margin: 100px auto auto auto;
     width: 100px;
     height: 50px;
+    cursor: pointer;
     background-color: bisque;
     border: 2px black solid;
     border-radius: 50px;
@@ -77,4 +78,8 @@ input{
     margin-top: 25px;
     font-size: 18px;
     cursor: auto;
+}
+.clicked{
+    background-color: burlywood;
+    border: 5px black solid;
 }
