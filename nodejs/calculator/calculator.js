@@ -3,8 +3,8 @@ const app = express();
 
 
 app.get("/", (req, res)=>{
-    console.log(req);
-    res.send("Hello World");
+    res.sendFile(__dirname + "/index.html");
+    console.log(__dirname);
 });
 
 
