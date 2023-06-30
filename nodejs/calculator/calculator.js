@@ -7,6 +7,11 @@ app.get("/", (req, res)=>{
 });
 
 
+app.post("/", (req, res)=>{
+    res.send("Thanks for posting the request.");
+});
+
+
 app.listen(3000, ()=>{
     console.log("Server has been started at 3000.");
 });
