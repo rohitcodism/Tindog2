@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-// const pass = require('body-parser');
+const pass = require('body-parser');
 
 
 app.get('/', (req, res)=>{
