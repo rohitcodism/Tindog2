@@ -13,8 +13,11 @@ app.get("/", (req, res)=>{
 
 
 app.post("/", (req, res)=>{
-    console.log(req.body);
-    res.send("Thanks for posting the request.");
+    let num1 = req.body.num1;
+    let num2 = req.body.num2;
+    
+    let result = num1 + num2;
+    res.send(result);
 });
 
 
