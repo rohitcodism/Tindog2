@@ -10,7 +10,8 @@ app.get("/", (req, res)=>{
 
 
         resp.on('data', (data)=>{
-            console.log(data);
+            const weatherData = JSON.parse(data);
+            console.log(weatherData);
         });
     });
 
