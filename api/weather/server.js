@@ -4,7 +4,7 @@ const app = express();
 
 
 app.get("/", (req, res)=>{
-    const url = 'https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=a6f1888ad9de1b93445f018986948496&unit=metric'
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Habra&units=metric&appid=a6f1888ad9de1b93445f018986948496'
     https.get(url, (resp)=>{
         console.log(resp.statusCode);
 
@@ -12,6 +12,8 @@ app.get("/", (req, res)=>{
         resp.on('data', (data)=>{
             const weatherData = JSON.parse(data);
             console.log(weatherData);
+            const temp = weatherData.main.temp;
+            console.log("The temperature in the location is : " + temp + " C")
         });
     });
 
