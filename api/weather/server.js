@@ -14,6 +14,7 @@ app.get("/", (req, res)=>{
             console.log(weatherData);
             const temp = weatherData.main.temp;
             console.log("The temperature in the location is : " + temp + " C")
+            console.log("The description is : " + weatherData.weather[0].description);
         });
     });
 
