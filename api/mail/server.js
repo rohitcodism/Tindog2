@@ -13,6 +13,12 @@ app.get("/", (req, res)=>{
     res.sendFile(__dirname + "/index.html");
 });
 
+app.post("/", (req, res)=>{
+    console.log(req.body.firstName);
+    console.log(req.body.lastName);
+    console.log(req.body.email);
+});
+
 app.listen(3000, ()=>{
     console.log("Server is up at port : 3000.");
 });
