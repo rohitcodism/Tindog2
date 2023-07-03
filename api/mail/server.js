@@ -3,6 +3,7 @@
 const express = require('express')
 const app = express();
 const pass = require('body-parser');
+const https = require('https');
 const request = require('request');
 
 app.use(pass.urlencoded({extended: true}));
@@ -29,11 +30,27 @@ app.post("/", (req, res)=>{
             }
         ]
     };
-    
-    var jsonData = JSON.stringify(data);
 
     
+    
+    const jsonData = JSON.stringify(data);
+    
+    const url = "https://us21.api.mailchimp.com/3.0/lists/72683f5ee6"
+    
+    const options = {
+        method: "POST",
+        auth: "rohitpa1:70f77890b2802f6c575731c9e7493cde-us21"
+    }
+    const request = https.request(url, options, (req, resp)=>{
+        response.on("data", (data)=>{
+            console.log(data);
+        });
+    });
+    
 });
+
+request.write(jsonData);
+request.end();
 
 app.listen(3000, ()=>{
     console.log("Server is up at port : 3000.");
