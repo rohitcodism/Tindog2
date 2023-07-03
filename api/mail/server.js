@@ -18,7 +18,7 @@ app.post("/", (req, res)=>{
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
     const email = req.body.email;
-    var data  = {
+    let data  = {
         members:[
             {
                 email_address: email,
@@ -43,14 +43,13 @@ app.post("/", (req, res)=>{
     }
     const request = https.request(url, options, (req, resp)=>{
         response.on("data", (data)=>{
-            console.log(data);
+            console.log(JSON.parse(data));
         });
     });
     
 });
 
-request.write(jsonData);
-request.end();
+
 
 app.listen(3000, ()=>{
     console.log("Server is up at port : 3000.");
