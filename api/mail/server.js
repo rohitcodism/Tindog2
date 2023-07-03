@@ -49,7 +49,11 @@ app.post("/", (req, res)=>{
     }
     const request = https.request(url, options, (resp)=>{
 
-        resp.statusCode
+        if(resp.statusCode === 200){
+            res.sendFile(__dirname + "/success.html");
+        }else{
+            res.sendFile(__dirname + "/fail.html")
+        }
 
         resp.on("data", (data)=>{
             console.log(JSON.parse(data));
