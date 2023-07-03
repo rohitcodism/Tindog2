@@ -8,7 +8,7 @@ const mailchimp = require('@mailchimp/mailchimp_marketing')
 const request = require('request');
 
 mailchimp.setConfig({
-    apiKey: "2d73bc749378555b5757dca70adc422f-us21",
+    apiKey: "c9a2bdd44484978edccabe573ce4a02b-us21",
     server: "us21"
 });
 
@@ -45,11 +45,11 @@ app.post("/", (req, res)=>{
     
     const options = {
         method: "POST",
-        auth: "paul1:2d73bc749378555b5757dca70adc422f-us21"
+        auth: "paul1:c9a2bdd44484978edccabe573ce4a02b-us21"
     }
     const request = https.request(url, options, (resp)=>{
 
-        if(resp.statusCode == 200){
+        if(resp.statusCode === 200){
             res.sendFile(__dirname + "/success.html");
         }else{
             res.sendFile(__dirname + "/fail.html")
