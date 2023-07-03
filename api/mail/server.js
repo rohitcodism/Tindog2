@@ -64,6 +64,10 @@ app.post("/", (req, res)=>{
     request.end();
 });
 
+app.post("/success", (req, res)=>{
+    res.redirect("/");
+});
+
 app.listen(3000, ()=>{
     console.log("Server is up at port : 3000.");
 });
