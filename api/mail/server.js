@@ -30,8 +30,8 @@ app.post("/", (req, res)=>{
                 email_address: email,
                 status: "subscribed",
                 marge_fields: {
-                    FNAME : firstName,
-                    LNAME : lastName
+                    FNAME: firstName,
+                    LNAME: lastName
                 }
             }
         ]
