@@ -4,7 +4,13 @@ const express = require('express')
 const app = express();
 const pass = require('body-parser');
 const https = require('https');
+const mailchimp = require('@mailchimp/mailchimp_marketing')
 const request = require('request');
+
+mailchimp.setConfig({
+    apiKey: "70f77890b2802f6c575731c9e7493cde-us21",
+    server: "us21"
+});
 
 app.use(pass.urlencoded({extended: true}));
 
