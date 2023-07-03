@@ -14,10 +14,25 @@ app.get("/", (req, res)=>{
 });
 
 app.post("/", (req, res)=>{
-    console.log(req.body.firstName);
-    console.log(req.body.lastName);
-    console.log(req.body.email);
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const email = req.body.email;
+    var data  = {
+        members:[
+            {
+                email_address: email,
+                status: "Subscribed",
+                marge_fields: {
+                    FNAME: firstName,
+                    LNAME: lastName
+                }
+            }
+        ]
+    };
+    
+    var jsonData = JSON.stringify(data);
 
+    
 });
 
 app.listen(3000, ()=>{
