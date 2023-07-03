@@ -25,7 +25,7 @@ app.post("/", (req, res)=>{
     const lastName = req.body.lastName;
     const email = req.body.email;
     let data  = {
-        members:[
+        members: [
             {
                 email_address: email,
                 status: "subscribed",
