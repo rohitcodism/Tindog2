@@ -8,7 +8,7 @@ const mailchimp = require('@mailchimp/mailchimp_marketing')
 const request = require('request');
 
 mailchimp.setConfig({
-    apiKey: "70f77890b2802f6c575731c9e7493cde-us21",
+    apiKey: "b12c717272d2d2abf4a3d5255f645257-us21",
     server: "us21"
 });
 
@@ -21,65 +21,41 @@ app.get("/", (req, res)=>{
 });
 
 app.post("/", (req, res)=>{
-    const fName = req.body.firstName;
-    const lName = req.body.lastName;
-    const mail = req.body.email;
-    const listId = "72683f5ee6";
-    const subscribingUser = {
-    firstName: fName,
-    lastName: lName,
-    email: mail
-};
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const email = req.body.email;
+    let data  = {
+        members:[
+            {
+                email_address: email,
+                status: "subscribed",
+                marge_fields: {
+                    FNAME : firstName,
+                    LNAME : lastName
+                }
+            }
+        ]
+    };
 
-async function run() {
-    const response = await mailchimp.lists.addListMember(listId, {
-        email_address: subscribingUser.email,
-        status: "subscribed",
-        merge_fields: {
-            FNAME: subscribingUser.firstName,
-            LNAME: subscribingUser.lastName
-        }
+    
+    
+    const jsonData = JSON.stringify(data);
+    
+    const url = "https://us21.api.mailchimp.com/3.0/lists/72683f5ee6"
+    
+    const options = {
+        method: "POST",
+        auth: "paul1:b12c717272d2d2abf4a3d5255f645257-us21"
+    }
+    const request = https.request(url, options, (resp)=>{
+        resp.on("data", (data)=>{
+            console.log(JSON.parse(data));
+        });
     });
-
-    console.log(
-        `Successfully added contact as an audience member. The contact's id is ${response.id
-        }.`
-    );
-}
-
-run();
-//     let data  = {
-//         members:[
-//             {
-//                 email_address: email,
-//                 status: "Subscribed",
-//                 marge_fields: {
-//                     FNAME: firstName,
-//                     LNAME: lastName
-//                 }
-//             }
-//         ]
-//     };
-
     
-    
-//     const jsonData = JSON.stringify(data);
-    
-//     const url = "https://us21.api.mailchimp.com/3.0/lists/72683f5ee6"
-    
-//     const options = {
-//         method: "POST",
-//         auth: "rohitpa1:70f77890b2802f6c575731c9e7493cde-us21"
-//     }
-//     const request = https.request(url, options, (req, resp)=>{
-//         response.on("data", (data)=>{
-//             console.log(JSON.parse(data));
-//         });
-//     });
-    
+    request.write(jsonData);
+    request.end();
 });
-
-
 
 app.listen(3000, ()=>{
     console.log("Server is up at port : 3000.");
