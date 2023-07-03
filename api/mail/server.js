@@ -17,8 +17,12 @@ app.post("/", (req, res)=>{
     console.log(req.body.firstName);
     console.log(req.body.lastName);
     console.log(req.body.email);
+
 });
 
 app.listen(3000, ()=>{
     console.log("Server is up at port : 3000.");
 });
+
+//API Key : 70f77890b2802f6c575731c9e7493cde-us21
+//Audience id : 72683f5ee6
