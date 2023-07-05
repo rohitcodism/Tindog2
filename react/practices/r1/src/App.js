@@ -13,8 +13,16 @@ const Person = (props) => {
 const App = ()=> {
   return (
     <div className="App">
-      <Person name = {'Rohit'} age={'19'} profession = {'He is a coder.'} />
-      <Person name = {'Payel'} age = {'24'} profession = {'She is a house-wife.'}/>
+      <Person
+        name={'Rohit'}
+        age={'19'}
+        profession={'He is a coder.'}
+      />
+      <Person
+        name = {'Payel'}
+        age = {'24'}
+        profession = {'She is a house-wife.'}
+      />
     </div>
   );
 }
