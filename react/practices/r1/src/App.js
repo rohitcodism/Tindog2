@@ -15,7 +15,9 @@ const App = ()=> {
   const [counter, setCounter] = useState(0);
   return (
     <div className="App">
-      <button> + </button>
+      <button onClick={()=>{
+        setCounter((prevCount)=>prevCount+1);
+      }}> + </button>
       <h1>Counter</h1>
       <button> - </button>
     </div>
