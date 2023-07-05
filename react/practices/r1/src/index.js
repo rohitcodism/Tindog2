@@ -8,3 +8,5 @@ Rdom.render(
     </>,
     document.getElementById('root')
 );
+
+// OMDB API Key : a78afb62
