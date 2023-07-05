@@ -14,9 +14,27 @@ const App = ()=>{
         searchMovies('Batman');
     },[]);
     return(
-        <>
-            <h1>App</h1>
-        </>
+        <div className="App">
+            <h1>Movie Space</h1>
+
+            <div className="search">
+                <input 
+                    type="text" 
+                    placeholder="Search for movies"
+                    value= "Batman"
+                    onChange={()=>{}}
+                />
+                <img 
+                    src={searchIcon}
+                    alt="search-icon"
+                    onClick={()=>{}}
+                />
+            </div>
+
+            <div className="container">
+                
+            </div>
+        </div>
     );
 };
 
