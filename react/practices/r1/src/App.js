@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Person = (props) => {
   return (
@@ -13,6 +13,10 @@ const Person = (props) => {
 
 const App = ()=> {
   const [counter, setCounter] = useState(0);
+
+  useEffect(()=>{
+    setCounter(0);
+  }, [])
   return (
     <div className="App">
       <button onClick={()=>{
