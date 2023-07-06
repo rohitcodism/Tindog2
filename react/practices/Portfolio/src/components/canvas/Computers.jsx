@@ -28,6 +28,22 @@ const Computers = () => {
 };
 
 const ComputersCanvas = ()=>{
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(()=>{
+    const mediaQuery = window.matchMedia('max-width: 500');
+    setIsMobile(mediaQuery.matches);
+
+    const handleChange = (event)=>{
+      setIsMobile(mediaQuery.matches);
+    }
+    mediaQuery.addEventListener('change', handleChange)
+
+    return ()=>{
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  })
+
   return(
     <Canvas frameloop = "demand" shadows camera = {{position: [20, 3, 5], fov: 25}} gl = {{preserveDrawingBuffer: true}}>
     <Suspense fallback={<CanvasLoader />}>
