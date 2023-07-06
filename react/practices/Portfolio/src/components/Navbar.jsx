@@ -1,3 +1,4 @@
+/* eslint-env node */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -18,6 +19,16 @@ const Navbar = () => {
           <img src="../assets/rp-logo.png" alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">Rohit</p>
         </Link>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navLinks.map((link)=>(
+            <li
+            key={link.id}
+            className={`${active === link.id} ? text-white : text-secondary`}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   )
