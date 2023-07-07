@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    sccselogo
 } from "../assets";
 
 export const navLinks = [
@@ -116,11 +117,11 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "UI Designer",
+        company_name: "SC CSE AOT",
+        icon: sccselogo,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "March 2023 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
