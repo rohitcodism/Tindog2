@@ -21,7 +21,7 @@ const ServiceCard = ({index, title, icon})=>{
   );
 };
 
-const About = () => {
+const About = ()=>{
   return (
     <>
       <motion.div variants={textVariant()}>
