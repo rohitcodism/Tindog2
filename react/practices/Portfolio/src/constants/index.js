@@ -125,22 +125,22 @@ const experiences = [
         iconBg: "#383E56",
         date: "March 2023 - Present",
         points: [
-            "Designing interactive web applications using Figma and other softwares.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Designing interactive web applications and mobile applications using Figma and other softwares.",
+            "As a UI Designer at Students Chapter CSE, my role involves creating visually appealing and intuitive user interfaces for various digital platforms.",
+            "Collaborating with the development team and stakeholders, I design and prototype engaging user interfaces.",
+            "I also collaborate with the marketing team to design visually appealing graphics and promotional materials.",
         ],
     },
     {
-        title: "Freelancer",
+        title: "UI Designer",
         company_name: "Qbit",
         icon: iconz,
         iconBg: "#E6DEDD",
         date: "Mar 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with Qbit team members and designers and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "I create visually captivating and user-centric interfaces for websites and applications, delivering engaging digital experiences.",
+            "Collaborating closely with clients, I translate their design requirements into pixel-perfect UIs.",
+            "Through wireframing, prototyping, and user testing, I iterate and refine designs to ensure optimal usability and a visually cohesive experience.",
         ],
     },
     {
@@ -151,9 +151,8 @@ const experiences = [
         date: "Apr 2023 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Collaborating with Qbit team members and designers and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     // {
