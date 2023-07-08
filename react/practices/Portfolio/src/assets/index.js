@@ -25,6 +25,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import sccselogo from "./company/sccselogo.png";
+import icon from "./company/icon.png";
+import iconz from "./company/iconz.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -56,6 +59,9 @@ export {
   shopify,
   starbucks,
   tesla,
+  sccselogo,
+  icon,
+  iconz,
   carrent,
   jobit,
   tripguide,
