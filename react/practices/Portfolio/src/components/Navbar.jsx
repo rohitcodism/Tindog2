@@ -1,5 +1,5 @@
-/* eslint-env node */
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from '../style';
@@ -9,6 +9,24 @@ import { menu, close } from '../assets';
 const Navbar = () => {
   const[active, setActive] = useState('');
   const[toggle, setToggle] = useState(false);
+  const ref = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 100) {
+        setScrolled(true);
+      }
+      else {
+        setScrolled(false);
+      }
+  }
+  
+  window.addEventListener('scroll', handleScroll);
+
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
@@ -24,7 +42,9 @@ const Navbar = () => {
             <li
             key={link.id}
             className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
-            onClick={()=>setActive(link.title)}
+            onClick={()=>{
+              setActive(link.title)
+              }}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
@@ -54,4 +74,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
