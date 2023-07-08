@@ -238,7 +238,7 @@ const projects = [
             }
         ],
         image: console,
-        design_link: "https://www.figma.com/file/ouGRN0eG9iWSoBrw4WSnP7/CONSOLE?type=design&t=6e9EBDK3qqiZsyTD-6",
+        source_code_link: "https://www.figma.com/file/ouGRN0eG9iWSoBrw4WSnP7/CONSOLE?type=design&t=6e9EBDK3qqiZsyTD-6",
     }
 
 ];
