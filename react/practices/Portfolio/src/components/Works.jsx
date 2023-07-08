@@ -6,6 +6,7 @@ import { github} from "../assets";
 import { projects} from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import figma from "../assets/tech/figma.png";
+import { StarsCanvas } from "./canvas";
 
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
