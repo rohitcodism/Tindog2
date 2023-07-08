@@ -37,6 +37,9 @@ import iconz from "./company/iconz.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import winter from "./winter.png";
+import console from "./CONSOLE.png";
+import nft from "./NFT.png";
 
 export {
   logo,
@@ -75,4 +78,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  winter,
+  console,
+  nft
 };

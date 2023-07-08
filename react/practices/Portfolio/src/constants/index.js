@@ -4,32 +4,22 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
-    docker,
     python,
     cpp,
     canva,
     clogo,
     exlogo,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    winter,
+    console,
+    nft,
     sccselogo,
-    icon,
     iconz
 } from "../assets";
 
@@ -204,16 +194,16 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Winter",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Landing page for a e-commerce website.",
         tags: [
             {
-                name: "react",
+                name: "html",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "css",
                 color: "green-text-gradient",
             },
             {
@@ -221,51 +211,36 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: winter,
+        source_code_link: "https://github.com/rohitcodism/Weby/tree/main/Websites%20built/Winter",
     },
     {
-        name: "Job IT",
+        name: "Crypto Website Landing Page",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Landing page for a crypto website.",
         tags: [
             {
-                name: "react",
+                name: "figma",
                 color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
+            }
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: nft,
+        source_code_link: "https://www.figma.com/file/br0Cs6WluWMo3WDGhiMiXx/Kryptoprototype?type=design&t=o2Z167YYoGxykvih-6",
     },
     {
-        name: "Trip Guide",
+        name: "Console",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Advertisement of a gaming console brand.",
         tags: [
             {
-                name: "nextjs",
+                name: "figma",
                 color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
+            }
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
-    },
+        image: console,
+        design_link: "https://www.figma.com/file/ouGRN0eG9iWSoBrw4WSnP7/CONSOLE?type=design&t=6e9EBDK3qqiZsyTD-6",
+    }
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
