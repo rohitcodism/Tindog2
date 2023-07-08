@@ -3,6 +3,7 @@ import { technologies } from "../constants";
 import { staggerContainer } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../style";
+import SectionWrapper from "../hoc/SectionWrapper";
 
 const Tech = () => {
   return (

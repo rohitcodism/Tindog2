@@ -24,6 +24,7 @@ import python from "./tech/pythonlogo.png";
 import cpp from "./tech/cpplogo.png";
 import canva from "./tech/canvalogo.png";
 import clogo from "./tech/clogo.png";
+import exlogo from "./tech/expresslogo.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -63,6 +64,7 @@ export {
   cpp,
   canva,
   clogo,
+  exlogo,
   meta,
   shopify,
   starbucks,

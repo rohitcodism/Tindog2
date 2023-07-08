@@ -19,6 +19,7 @@ import {
     cpp,
     canva,
     clogo,
+    exlogo,
     meta,
     starbucks,
     tesla,
@@ -104,8 +105,8 @@ const technologies = [
         icon: clogo,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "Express Js",
+        icon: exlogo,
     },
     {
         name: "git",
