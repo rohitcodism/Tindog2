@@ -215,7 +215,7 @@ const projects = [
         source_code_link: "https://github.com/rohitcodism/Weby/tree/main/Websites%20built/Winter",
     },
     {
-        name: "Crypto Website Landing Page",
+        name: "Crypto Website",
         description:
             "Landing page for a crypto website.",
         tags: [
