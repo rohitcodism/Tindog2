@@ -15,6 +15,10 @@ import {
     git,
     figma,
     docker,
+    python,
+    cpp,
+    canva,
+    clogo,
     meta,
     starbucks,
     tesla,
@@ -76,16 +80,16 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
+        name: "Python",
+        icon: python,
     },
     {
         name: "React JS",
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "C++",
+        icon: cpp,
     },
     {
         name: "Tailwind CSS",
@@ -96,8 +100,8 @@ const technologies = [
         icon: nodejs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "C",
+        icon: clogo,
     },
     {
         name: "Three JS",
@@ -112,8 +116,8 @@ const technologies = [
         icon: figma,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "Canva",
+        icon: canva,
     },
 ];
 
