@@ -29,11 +29,11 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
+        id: "works",
         title: "Work",
     },
     {
-        id: "contact",
+        id: "contacts",
         title: "Contact",
     },
 ];
