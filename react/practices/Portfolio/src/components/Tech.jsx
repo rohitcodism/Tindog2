@@ -2,7 +2,7 @@ import { BallCanvas } from "./canvas";
 import { technologies } from "../constants";
 import { staggerContainer } from "../utils/motion";
 import { motion } from "framer-motion";
-import { styles } from "../style";
+import { styles } from "../styles";
 
 const Tech = () => {
   return (
