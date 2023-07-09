@@ -45,7 +45,7 @@ const Navbar = () => {
               setActive(nav.title)
               }}
             >
-              <Link to={nav.id} smooth="true" offset={200} duration={500} >{nav.title}</Link>
+              <Link to={nav.id} smooth="true" offset={10} duration={300} >{nav.title}</Link>
             </li>
           ))}
         </ul>

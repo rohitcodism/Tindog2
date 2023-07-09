@@ -67,7 +67,7 @@ const Contact = () => {
     viewport={{once: true, amount: 0.25}}
     className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
     >
-      <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+      <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden" id="contact">
         <motion.div 
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"

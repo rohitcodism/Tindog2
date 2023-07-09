@@ -52,8 +52,8 @@ const Experience = () => {
       className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
     >
       <motion.div variants={textVariant}>
-      <p className={styles.sectionSubText}>What I have done</p>
-      <h2 className={styles.sectionHeadText}>XP</h2>
+      <p className={`${styles.sectionSubText} text-center `}>What I have done</p>
+      <h2 className={`${styles.sectionHeadText} text-center `}>XP</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
