@@ -1,21 +1,32 @@
-import React, { useState, useReducer } from 'react'
+import React, { useState, useReducer } from 'react';
 
+const Actions = {
+  new_todo : 'add-todo'
+}
 
-export default function App() {
-  const [count, setCount] = useState(0)
+function reducer ( state, action ){
 
-  function increment (){
-    setCount(prevCount => prevCount + 1);
-  }
-  function decrement(){
-    setCount(prevCount => prevCount - 1);
+}
+
+const App = ()=> {
+  const [todo, dispatch] = useReducer( reducer, [])
+  const [name, setName] = useState(' ')
+
+  function handleSubmit(e){
+    dispatch({ type: Actions.new_todo } )
+    setName('')
   }
 
   return (
     <>
-      <button onClick={increment()}> + </button>
-      <span>{ count } </span>
-      <button onClick={decrement()}> - </button>
+      <form
+        action=""
+        onSubmit={handleSubmit()}
+      >
+      <input type="text" value={name} onChange={e => setName(e.target.value)}  />
+      </form>
     </>
   );
-}
+};
+
+export default App;
